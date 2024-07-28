@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+:root{
+    --preto: #000000;
+    --cinza: #dddddd;
+    --rosa: #ff5da8;
+    --cor-de-fundo: #910061;
+    --branco: #ffffff;
+    --roxo: #673188;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--cor-de-fundo);
+    font-family: 'Mulish', sans-serif;
+}
+
+.cabecalho{
+    text-align: center;
+    background-color: var(--roxo);
+    padding: 5px 0 5px 0;
+    color: var(--branco);
+}
+
+.questionario{
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: var(--branco);
+    color: var(--roxo);
+    border-radius: 25px;
+    font-weight: bold;
+}
+
+.introducao{
+    font-size: 40px;
+    color: var(--preto);
+    text-align: center;
+    width: 100%;
+    color: var(--branco);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    text-align: center;
+}
+
+label{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+input{
+    color: var(--preto);
+    padding-top: 5px;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    background-color: var(--cinza);
+    border-color: var(--cinza);
+    width: 100%;
+    text-align: center;
+}
+
+.sexo{
+    width: 15px;
+    height: 15px;   
+}
+
+
+.enviar{
+    width: auto;
+    border-radius: 5px;
+    color: var(--preto);
+    background-color: var(--cinza);
+    border-color: var(--cinza);
+    padding: 5px 5px 5px 5px;
+    margin: 10px 0 10px 0;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.enviar:hover{
+    background-color: var(--rosa);
+}
+
+.rodape{
+    text-align: center;
+    background-color: var(--roxo);
+    padding: 5px 0 5px 0;
+    color: var(--branco);
+}
