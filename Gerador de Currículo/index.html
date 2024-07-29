@@ -9,12 +9,13 @@
     <script src="main.js"></script>
 </head>
 <body>
-    <section class="conteudo-informacoes">
+    <section>
         <header class="cabecalho">
             <h2>Gerador de Currículo</h2>
         </header>
         <h3 class="introducao">Gere seu currículo de forma simples e rápida apenas respondendo um pequeno questionário.</h3>
             <div class="questionario">
+                <form action="" method="post">
                     <div class="form" id="formulario">
                         <h3>Suas Informações Pessoais:</h3>
                         <label for="nome">Seu Nome Completo:</label>
@@ -27,7 +28,7 @@
                         <input type="text" id="nacionalidade" required>
                         
                         <label for="nascimento">Sua Data de Nascimento:</label>
-                        <input type="date" id="nascimento" class="datas" required>
+                        <input type="date" id="nascimento" required>
                         
                         <p>Sexo:</p>
                         <div class="form-group" id="sexo">
@@ -63,15 +64,16 @@
                         <input type="text" id="instituicao" required>
 
                         <label for="inicio">Data de Início:</label>
-                        <input type="date" id="inicio" class="datas" required>
+                        <input type="date" id="inicio" required>
                         
                         <label for="conclusao">Data de Conclusão:</label>
-                        <input type="date" id="conclusao" class="datas" required>
+                        <input type="date" id="conclusao" required>
                         
-                        <button class="enviar" onclick="gerarCurriculo()">Gerar Currículo</button>
+                        <button onclick="gerarCurriculo()">Gerar Currículo</button>
                     </div>
+                </form>    
             </div>
-        <footer class="rodape">
+        <footer>
             <p>Sobre - Políticas de Privacidade - Contato</p>
         </footer>
     </section>

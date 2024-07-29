@@ -1,5 +1,7 @@
+/*Fonte Mulish usada no site*/
 @import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
 
+/*Elemento raiz do documento, contendo as cores usadas no site*/
 :root{
     --preto: #000000;
     --cinza: #dddddd;
@@ -9,20 +11,31 @@
     --roxo: #673188;
 }
 
+/*Deixando o site sem as margens-padrão, definindo sua cor de fundo e a fonte de todo o corpo*/
 body{
     margin: 0;
     padding: 0;
     background-color: var(--cor-de-fundo);
     font-family: 'Mulish', sans-serif;
+    text-align: center;
 }
 
+/*Definindo tamanho da fonte, cor de fundo, cor do textos e seu padding (preenchimento em tradução direta) do cabecalho*/
 .cabecalho{
-    text-align: center;
+    font-size: 20px;
     background-color: var(--roxo);
-    padding: 5px 0 5px 0;
+    color: var(--branco);
+    padding: 5px 5px;
+}
+
+/*Texto de introdução com tamanho, largura e cor determinados*/
+.introducao{
+    font-size: 40px;
+    width: 100%;
     color: var(--branco);
 }
 
+/*Determina o tamanho máximo, margin, padding, cor de fundo, cor dos elementos, circunferência da borda, e fonte em negrito do questionário*/
 .questionario{
     max-width: 600px;
     margin: 40px auto;
@@ -33,65 +46,60 @@ body{
     font-weight: bold;
 }
 
-.introducao{
-    font-size: 40px;
-    color: var(--preto);
-    text-align: center;
-    width: 100%;
-    color: var(--branco);
-}
-
+/*Define a exibição e tamanho máximo do formulário*/
 .form{
     display: flex;
     flex-direction: column;
     max-width: 600px;
-    text-align: center;
 }
 
+/*Margens de cima e de baixo do label*/
 label{
     margin-top: 5px;
     margin-bottom: 5px;
 }
 
+/*Cores, alinhamento, padding, margin, circunferência e largura do input*/
 input{
     color: var(--preto);
+    background-color: var(--cinza);
+    border-color: var(--cinza);
+    text-align: center;
     padding-top: 5px;
     margin-bottom: 5px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 10px;
-    background-color: var(--cinza);
-    border-color: var(--cinza);
     width: 100%;
-    text-align: center;
 }
 
+/*Margin, largura e altura das opções de sexo*/
 .sexo{
-    width: 15px;
-    height: 15px;   
+    margin-left: 10px;
+    width: 12px;
+    height: 12px;   
 }
 
-
-.enviar{
-    width: auto;
-    border-radius: 5px;
+/*Cores, largura, circunferência, padding, margin e alterando o cursor quando sobre o botão*/
+button{
     color: var(--preto);
     background-color: var(--cinza);
     border-color: var(--cinza);
-    padding: 5px 5px 5px 5px;
-    margin: 10px 0 10px 0;
+    width: auto;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 10px auto 10px auto;
     cursor: pointer;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.enviar:hover{
+/*Quando o mouse estiver sobre o botão, sua cor mudará*/
+button:hover{
     background-color: var(--rosa);
 }
 
-.rodape{
-    text-align: center;
+/*Cores e padding do rodapé*/
+footer{
     background-color: var(--roxo);
-    padding: 5px 0 5px 0;
     color: var(--branco);
+    padding: 5px 5px;
 }
